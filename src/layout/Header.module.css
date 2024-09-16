@@ -1,0 +1,39 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+}
+@media(max-width:768px) {
+  .nav-ul {
+    position: fixed;
+    /* position:absoluteではなくfixedにすることでoverflow-xを防ぐ */
+    right: -40vw;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 35vw;
+    background-color: white;
+    transition: right 0.3s ease-in-out;
+    background: linear-gradient(#a2a1a1, #ffffff);
+    font-weight: bold;
+  }
+  .navdropdown{
+    max-height: 4rem;
+    overflow-y: auto;    
+  }
+}
+
+.navbarchange{
+  right: 0;
+}
+

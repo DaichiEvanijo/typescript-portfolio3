@@ -1,0 +1,72 @@
+/* for Hero  */
+.hidden1 {
+  opacity: 0;
+}
+.appear1 {
+  animation: popup 1.25s ease-in-out forwards;
+}
+@keyframes popup{
+  0%{transform:none;
+    opacity: 0;}
+  75%{opacity: 0.25;}
+  100%{transform: translateY(-70px);
+      opacity: 1;}
+}
+
+/* for section2 */
+.hidden2{
+  opacity: 0;
+}
+.appear2{
+  animation: slideA 1.25s ease-in-out forwards;
+}
+@keyframes slideA{
+  0%{transform:translateX(-50px);
+    opacity: 0;}
+  75%{opacity: 0.25;}
+  100%{transform: translateX(0px);
+      opacity: 1;}
+}
+.hidden3{
+  opacity: 0;
+}
+.appear3{
+  animation: slideB 1.25s ease-in-out forwards;
+}
+@keyframes slideB{
+  0%{transform:translateX(50px);
+    opacity: 0;}
+  75%{opacity: 0.25;}
+  100%{transform: translateX(0px);
+      opacity: 1;}
+}
+
+/* for section3 (Leistungen) */
+.hidden4{
+  opacity: 0;
+}
+.appear4{
+  animation: popup2 1.25s ease-in-out forwards;
+}
+@keyframes popup2{
+  0%{transform:translateY(50px);
+    opacity: 0;}
+  75%{opacity: 0.25;}
+  100%{transform: translateY(0px);
+      opacity: 1;}
+}
+
+
+
+
+/* hover effect on cards */
+.card{
+  transition:transform 0.4s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+
+

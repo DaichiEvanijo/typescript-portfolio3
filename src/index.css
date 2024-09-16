@@ -1,0 +1,18 @@
+/* global */
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: opacity 0.5s;
+}
+a:hover{
+  opacity: 0.6;
+}
+img {
+  vertical-align: bottom;
+  object-fit: cover;
+}

@@ -1,0 +1,7 @@
+.contactImg{
+  transition: transform 0.4s ease-in-out;
+}
+
+.contactImg:hover{
+  transform: scale(1.05);
+}
